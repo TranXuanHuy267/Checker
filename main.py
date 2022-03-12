@@ -23,6 +23,7 @@ def main():
         clock.tick(FPS)
         
         if game.turn == WHITE:
+            # Minimax with deep 2
             value, new_board = Minimax(game.get_board(), 2, WHITE, game)
             game.ai_move(new_board)
 
